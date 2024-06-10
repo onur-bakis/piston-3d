@@ -19,6 +19,11 @@ namespace Controller
             _draggableObject = draggableObject;
         }
         
+        public void StartDrag(Vector3 position)
+        {
+            _assembleAnimationController.StartDrag(position);
+        }
+        
         public void Drag(Vector3 position)
         {
             _assembleAnimationController.Drag(position);
@@ -29,9 +34,5 @@ namespace Controller
             _assembleAnimationController.Drop();
         }
 
-        public void StartDrag(Vector3 position)
-        {
-            _assembleAnimationController.StartDrag(position);
-        }
     }
 }

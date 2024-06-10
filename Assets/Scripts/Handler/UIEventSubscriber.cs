@@ -25,7 +25,7 @@ namespace Handler
         {
             switch (type)
             {
-                case UIEventSubscriptionTypes.OnSimStart:
+                case UIEventSubscriptionTypes.OnLearnSimStart:
                 {
                     Debug.Log("SeeLevels");
                     _uiPanelController.OnStartSim();

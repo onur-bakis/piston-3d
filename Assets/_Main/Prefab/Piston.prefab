@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 8501870028554798}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.0009805113, y: 0.18480799, z: -0.001118362}
+  m_LocalPosition: {x: 0.0009805113, y: 0.1442, z: -0.0011}
   m_LocalScale: {x: 100, y: 99.999985, z: 99.999985}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -123,6 +123,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   assembleAnimationView: {fileID: 2400109659227735924}
   assemblePointViews: []
+  learnData: 1
+  learnOrder: 5
+  partName: Piston
 --- !u!114 &285108070033690340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,6 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa20371f7abb41afaa05d275819fc411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  assembleObjectMainView: {fileID: 1452473509381879710}
   tutorialAnimationNumber: 6
   assemblePreview: {fileID: 3731252983818420997, guid: fdac6b959ab904f808232734a9060f96, type: 3}
   assembled: 0
@@ -314,6 +318,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   assembleAnimationView: {fileID: 8901641866782241916}
   assemblePointViews: []
+  learnData: 1
+  learnOrder: 4
+  partName: Bolt
 --- !u!114 &6353883645004821916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,6 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa20371f7abb41afaa05d275819fc411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  assembleObjectMainView: {fileID: 4179537675986586563}
   tutorialAnimationNumber: 4
   assemblePreview: {fileID: 6132117316018233876, guid: f187c39be78bc43f388abee0533a4618, type: 3}
   assembled: 0
@@ -476,6 +484,9 @@ MonoBehaviour:
   assembleAnimationView: {fileID: 1413069207093442943}
   assemblePointViews:
   - {fileID: 2283659111469782178}
+  learnData: 1
+  learnOrder: 3
+  partName: Rod Cap
 --- !u!114 &8536853393643058489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,6 +517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa20371f7abb41afaa05d275819fc411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  assembleObjectMainView: {fileID: 3623498233298285932}
   tutorialAnimationNumber: 3
   assemblePreview: {fileID: 2536995012614234626, guid: 4a06e7e5230af4217852e34c143f0766, type: 3}
   assembled: 0
@@ -581,6 +593,7 @@ GameObject:
   - component: {fileID: 7087416082266038803}
   - component: {fileID: 879961243045637206}
   - component: {fileID: 2685852656371950915}
+  - component: {fileID: 4335328546454431075}
   m_Layer: 0
   m_Name: pin_clip_2
   m_TagString: Untagged
@@ -597,7 +610,7 @@ Transform:
   m_GameObject: {fileID: 2801404169949391735}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.0010036379, y: 0.17432481, z: 0.071998894}
+  m_LocalPosition: {x: -0.029019488, y: 0.2022, z: -0.0011}
   m_LocalScale: {x: 100, y: 99.999985, z: 99.999985}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -689,6 +702,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   assembleAnimationView: {fileID: 2685852656371950915}
   assemblePointViews: []
+  learnData: 0
+  learnOrder: 0
+  partName: Pin
 --- !u!114 &879961243045637206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -719,6 +735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa20371f7abb41afaa05d275819fc411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  assembleObjectMainView: {fileID: 7087416082266038803}
   tutorialAnimationNumber: 9
   assemblePreview: {fileID: 4137121863381954693, guid: 12519d4dbd11543348b49f140ae1dc04, type: 3}
   assembled: 0
@@ -726,6 +743,27 @@ MonoBehaviour:
   lockedAfterAssemble: []
   needsToBeAssembled:
   - {fileID: 4969117315380306407}
+--- !u!135 &4335328546454431075
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2801404169949391735}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.000091176924
+  m_Center: {x: 2.9831426e-10, y: 0, z: 0}
 --- !u!1 &3026297137426282748
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,6 +953,8 @@ GameObject:
   - component: {fileID: 8575036415037448080}
   - component: {fileID: 1978578464551426746}
   - component: {fileID: 1806145973377699996}
+  - component: {fileID: 4249912075609666330}
+  - component: {fileID: 7178227106002546568}
   - component: {fileID: 3674860410701885565}
   - component: {fileID: 6901143131146422409}
   - component: {fileID: 7204642516370802664}
@@ -1012,6 +1052,48 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3199749510219156936, guid: ba8e4b3a99ed64de08c7823a4e78d46d, type: 3}
+--- !u!65 &4249912075609666330
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5373425810696904201}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.00046515864, y: 0.00022311328, z: 0.00010115461}
+  m_Center: {x: -0.0000017361529, y: -1.9784862e-18, z: 0.000076068754}
+--- !u!65 &7178227106002546568
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5373425810696904201}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.00035673744, y: 0.00022311328, z: 0.00011047229}
+  m_Center: {x: -0.0000016746949, y: 1.3430151e-19, z: -0.000029032282}
 --- !u!114 &3674860410701885565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1026,6 +1108,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   assembleAnimationView: {fileID: 7204642516370802664}
   assemblePointViews: []
+  learnData: 1
+  learnOrder: 2
+  partName: Rod Bearing
 --- !u!114 &6901143131146422409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1056,6 +1141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa20371f7abb41afaa05d275819fc411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  assembleObjectMainView: {fileID: 3674860410701885565}
   tutorialAnimationNumber: 1
   assemblePreview: {fileID: 27494690013619258, guid: 2e139e29f9bcd4fd69235c04b219ba69, type: 3}
   assembled: 0
@@ -1075,6 +1161,8 @@ GameObject:
   - component: {fileID: 2078669689929277596}
   - component: {fileID: 2973292195207534821}
   - component: {fileID: 5697802359653920688}
+  - component: {fileID: 2020489447902197263}
+  - component: {fileID: 2321960503070349217}
   - component: {fileID: 8968363987085719196}
   - component: {fileID: 8693883655438098900}
   - component: {fileID: 1472711652736731638}
@@ -1172,6 +1260,48 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5642959312013759625, guid: ba8e4b3a99ed64de08c7823a4e78d46d, type: 3}
+--- !u!65 &2020489447902197263
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5684133600236183240}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0004743306, y: 0.00022311328, z: 0.00008702825}
+  m_Center: {x: 0.0000013276003, y: 1.87277e-19, z: 0.000083131636}
+--- !u!65 &2321960503070349217
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5684133600236183240}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.00033148317, y: 0.00022311328, z: 0.00010934433}
+  m_Center: {x: 0.0000015874207, y: 5.3476128e-20, z: -0.000017316708}
 --- !u!114 &8968363987085719196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1186,6 +1316,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   assembleAnimationView: {fileID: 1472711652736731638}
   assemblePointViews: []
+  learnData: 0
+  learnOrder: 0
+  partName: Rod Bearing
 --- !u!114 &8693883655438098900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1216,6 +1349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa20371f7abb41afaa05d275819fc411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  assembleObjectMainView: {fileID: 8968363987085719196}
   tutorialAnimationNumber: 2
   assemblePreview: {fileID: 7721944595962305528, guid: 4bd8a489fa7cf46d98b02ca08d22c86e, type: 3}
   assembled: 0
@@ -1327,6 +1461,7 @@ GameObject:
   - component: {fileID: 5038876178427847781}
   - component: {fileID: 5233022634028974131}
   - component: {fileID: 782508782889396005}
+  - component: {fileID: 7361502062374513405}
   m_Layer: 0
   m_Name: pin_clip_1
   m_TagString: Untagged
@@ -1343,7 +1478,7 @@ Transform:
   m_GameObject: {fileID: 6301454608623317548}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.0010036379, y: 0.17432481, z: -0.07442212}
+  m_LocalPosition: {x: 0.03098051, y: 0.2022, z: -0.0011}
   m_LocalScale: {x: 100, y: 99.999985, z: 99.999985}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1435,6 +1570,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   assembleAnimationView: {fileID: 782508782889396005}
   assemblePointViews: []
+  learnData: 1
+  learnOrder: 7
+  partName: Pin
 --- !u!114 &5233022634028974131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1465,6 +1603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa20371f7abb41afaa05d275819fc411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  assembleObjectMainView: {fileID: 5038876178427847781}
   tutorialAnimationNumber: 8
   assemblePreview: {fileID: 5669810647149458147, guid: 9a112c1e8b74a431487b141f073539a1, type: 3}
   assembled: 0
@@ -1472,6 +1611,27 @@ MonoBehaviour:
   lockedAfterAssemble: []
   needsToBeAssembled:
   - {fileID: 4969117315380306407}
+--- !u!135 &7361502062374513405
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6301454608623317548}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.000091176924
+  m_Center: {x: 2.9831426e-10, y: 0, z: 0}
 --- !u!1 &6581268728819823824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,6 +1851,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   assembleAnimationView: {fileID: 9192522021383105371}
   assemblePointViews: []
+  learnData: 0
+  learnOrder: 0
+  partName: Bolt
 --- !u!114 &3095799598182482025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1721,6 +1884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa20371f7abb41afaa05d275819fc411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  assembleObjectMainView: {fileID: 431640755614778161}
   tutorialAnimationNumber: 5
   assemblePreview: {fileID: 9202960932803959678, guid: 0a5ea4701ff384609a136385e09bac0e, type: 3}
   assembled: 0
@@ -1867,6 +2031,9 @@ MonoBehaviour:
   - {fileID: 8069204751948810029}
   - {fileID: 3824030381384866457}
   - {fileID: 8008248478470210712}
+  learnData: 1
+  learnOrder: 1
+  partName: Rod
 --- !u!114 &2209570232527705722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1897,6 +2064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa20371f7abb41afaa05d275819fc411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  assembleObjectMainView: {fileID: 4396954875037236483}
   tutorialAnimationNumber: 0
   assemblePreview: {fileID: 7091642836229026769, guid: 391a687a2cc794df9a22aeae88bd6339, type: 3}
   assembled: 0
@@ -1918,6 +2086,7 @@ GameObject:
   - component: {fileID: 9120098790089044788}
   - component: {fileID: 6285838512186897203}
   - component: {fileID: 4969117315380306407}
+  - component: {fileID: 4646340750892986427}
   m_Layer: 0
   m_Name: wrist_pin
   m_TagString: Untagged
@@ -1934,7 +2103,7 @@ Transform:
   m_GameObject: {fileID: 7553302295702767675}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.0009805113, y: 0.12721005, z: -0.00111866}
+  m_LocalPosition: {x: 0.0009805113, y: 0.2022, z: -0.0011}
   m_LocalScale: {x: 100, y: 99.999985, z: 99.999985}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2026,6 +2195,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   assembleAnimationView: {fileID: 4969117315380306407}
   assemblePointViews: []
+  learnData: 1
+  learnOrder: 6
+  partName: Wrist Pin
 --- !u!114 &6285838512186897203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2056,6 +2228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa20371f7abb41afaa05d275819fc411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  assembleObjectMainView: {fileID: 9120098790089044788}
   tutorialAnimationNumber: 7
   assemblePreview: {fileID: 4160569439629145463, guid: 00525fdfe16794429ae7525c39f9fb8f, type: 3}
   assembled: 0
@@ -2065,6 +2238,29 @@ MonoBehaviour:
   - {fileID: 2685852656371950915}
   needsToBeAssembled:
   - {fileID: 2400109659227735924}
+--- !u!136 &4646340750892986427
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7553302295702767675}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.00007620006
+  m_Height: 0.00067056046
+  m_Direction: 1
+  m_Center: {x: -2.9831426e-10, y: -2.0220699e-25, z: 7.639754e-11}
 --- !u!1 &9049419875702849783
 GameObject:
   m_ObjectHideFlags: 0
